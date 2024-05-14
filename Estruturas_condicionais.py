@@ -22,3 +22,5 @@ elif idade == IDADE_ESPECIAL:
     print("Pode fazer as aulas teóricas, mas não pode fazer aulas práticas.")
 else:
     print("Ainda não pode tirar CNH.")
+
+    # aulas#
