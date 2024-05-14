@@ -1,10 +1,9 @@
-saldo= 200
-saque= 200
+saldo = 200
+saque = 200
 
 print(saldo == saque)
-print(saldo != saque) #diferente de#
+print(saldo != saque)  # diferente de#
 print(saldo > saque)
 print(saldo >= saque)
 print(saldo < saque)
 print(saldo <= saque)
-
