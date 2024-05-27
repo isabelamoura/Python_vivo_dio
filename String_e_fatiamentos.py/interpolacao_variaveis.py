@@ -3,6 +3,13 @@ idade= 25
 profissao= "Programador"
 linguagem= "Python"
 
-print("Olá meu nome é %s. Eu tenho %d de idade, trabalho como %s, e estou matriculado em %s." % (nome, idade, profissao, linguagem))
+print("Nome: %s, Idade: %d, profissão: %s, estudo: %s." % (nome, idade, profissao, linguagem))
 
-print("Ola meu nome é {}. Eu tenho {} anos de idade, trabalho como {} e estou matriculado  no curso de {}." . format(nome, idade, profissao, linguagem))
+print("Nome: {}, Idade: {}, profissão: {}, estudo: {}." . format(nome, idade, profissao, linguagem))
+
+print(f"Nome: {nome}, idade: {idade} profissão: {profissao}, estudo:{linguagem}.")
+
+#formatação simplificada
+PI=3.14159
+print(f"O valor de PI: {PI: .2F}")
+print(f"O valor de PI: {PI:10.2F}") # 10 EQUIVALENTE AO NUMERO DE ESPACOS E 2 AO NUMERO DE CASAS PARA MSOTRAR O RESULTADO
