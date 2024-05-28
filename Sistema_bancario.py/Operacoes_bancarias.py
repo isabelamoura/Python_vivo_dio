@@ -1,3 +1,17 @@
+# Solicitar dados da agência e da conta com validação
+while True:
+    agencia = input("Informe o número da agência (4 dígitos): ")
+    if len(agencia) == 4 and agencia.isdigit():
+        break
+    else:
+        print("Agência inválida! A agência deve conter exatamente 4 dígitos numéricos.")
+
+while True:
+    conta = input("Informe o número da conta (6 dígitos): ")
+    if len(conta) == 6 and conta.isdigit():
+        break
+    else:
+        print("Conta inválida! A conta deve conter exatamente 6 dígitos numéricos.")
 menu = """
 [D] Depositar
 [S] Sacar
@@ -21,7 +35,7 @@ while True:  # Loop infinito
 
         if valor > 0:
             saldo += valor
-            extrato += f"Depósito: R${valor:.2f}\n"                                                                  #ADICIONAR AO EXTRATO A MOVIMENTAÇÃO#
+            extrato += f"Depósito: R${valor:.2f}\n"
         else:
             print("Não é possível realizar esta operação! O valor informado é inválido.")
 
@@ -41,12 +55,13 @@ while True:  # Loop infinito
         elif valor > 0:
             saldo -= valor
             extrato += f"Saque: R${valor:.2f}\n"
-            numero_saques += 1                                                                                    #PARA ADICIONAR UMA MOVIMENTAÇÃO DE SAQUE, PARA O LIMITE"
+            numero_saques += 1
         else:
             print("Operação falhou! O valor informado é inválido.")
 
     elif opcao == "E":
         print("\n================EXTRATO================")
+        print(f"Agência: {agencia} | Conta: {conta}")
         print("Não foram realizadas movimentações." if not extrato else extrato)
         print(f"\nSaldo: R${saldo:.2f}")
         print("=======================================")
