@@ -1,13 +1,13 @@
 # Solicitar dados da agência e da conta com validação
 while True:
     agencia = input("Informe o número da agência (4 dígitos): ")
-    if len(agencia) == 4 and agencia.isdigit():
+    if len(agencia) == 4 and agencia.isdigit():                                              #LEN PARA VERIFICAR QUANTIDADE DE CARACTERES INSERIDOS NO CÓDIGO
         break
     else:
         print("Agência inválida! A agência deve conter exatamente 4 dígitos numéricos.")
 
 while True:
-    conta = input("Informe o número da conta (6 dígitos): ")
+    conta = input("Informe o número da conta (6 dígitos): ")                                #LOPPING INFINITO ATE QUE SEJA EXATAMENTE 6 DIGITOS
     if len(conta) == 6 and conta.isdigit():
         break
     else:
@@ -61,6 +61,7 @@ while True:  # Loop infinito
 
     elif opcao == "E":
         print("\n================EXTRATO================")
+        print(menu.center(20, "#"))
         print(f"Agência: {agencia} | Conta: {conta}")
         print("Não foram realizadas movimentações." if not extrato else extrato)
         print(f"\nSaldo: R${saldo:.2f}")
