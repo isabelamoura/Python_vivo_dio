@@ -1,4 +1,4 @@
-#PARA ORGANIZAR OS ARQUIVOS
+# PARA ORGANIZAR OS ARQUIVOS
 
 
 linguagens = ["Python", "js", "c", "java", "csharp"]

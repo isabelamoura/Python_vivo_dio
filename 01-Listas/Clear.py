@@ -1,4 +1,4 @@
-lista = [1, "Python", [40,30,20]]
+lista = [1, "Python", [40, 30, 20]]
 
 print(lista)
 
@@ -6,4 +6,4 @@ lista.clear()
 
 print(lista)
 
-#USADO PARA LIMPAR A LISTA
+# USADO PARA LIMPAR A LISTA
